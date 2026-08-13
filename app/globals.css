@@ -88,19 +88,16 @@ nav {
   margin-bottom: 80px;
 }
 
-nav strong {
-  font-size: 20px;
-}
-
-nav div {
-  display: flex;
-  gap: 16px;
-}
-
-nav span {
+.menu-icon {
   cursor: pointer;
+}
+
+.search-icon {
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .logo {
   cursor: pointer;
+  font-size: 20px;
 }

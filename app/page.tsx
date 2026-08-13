@@ -1,17 +1,10 @@
+import Navbar from "@/components/Navbar/Navbar";
+
 export default function Home() {
   return (
     <main>
       <header>
-        <nav>
-          <div className="logo">
-            <strong>LOGO</strong>
-          </div>
-
-          <div>
-            <span>🔍 Search</span>
-            <span>☰</span>
-          </div>
-        </nav>
+        <Navbar />
 
         <h1>BayuDevDesk</h1>
         <p>Personal Developer Workspace & Learning Guide</p>
