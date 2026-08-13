@@ -9,11 +9,9 @@ export default function Navbar() {
         <Link href="/">Logo</Link>
       </div>
 
-      <div>
-        <Hamburger />
-      </div>
-      <div>
+      <div className="navbar-actions">
         <Search />
+        <Hamburger />
       </div>
     </nav>
   );
