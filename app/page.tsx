@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,33 +12,33 @@ export default function Home() {
       </header>
 
       <section className="home-content">
-        <article id="getting-started" className="content-card">
-          <h2>Getting Started</h2>
+        <Link href="/web-development-guide" className="content-card">
+          <h2>Web Development Guide</h2>
           <p>
             Panduan membuat website dari nol sampai bisa diakses secara online.
           </p>
-        </article>
+        </Link>
 
-        <article id="notes" className="content-card">
+        <Link href="/notes" className="content-card">
           <h2>Notes</h2>
           <p>
             Catatan dan materi yang saya pelajari selama belajar web
             development.
           </p>
-        </article>
+        </Link>
 
-        <article id="tools" className="content-card">
+        <Link href="/tools" className="content-card">
           <h2>Tools</h2>
           <p>
             Apa saja tools yang saya gunakan untuk membuat website, mulai dari
             text editor, framework, hingga deployment.
           </p>
-        </article>
+        </Link>
 
-        <article id="devjourney" className="content-card">
+        <Link href="/devjourney" className="content-card">
           <h2>My Development Journey</h2>
           <p>Track my progress and experiences in web development.</p>
-        </article>
+        </Link>
       </section>
 
       <footer>
