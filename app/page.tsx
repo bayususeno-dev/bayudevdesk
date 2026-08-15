@@ -35,7 +35,7 @@ export default function Home() {
           </p>
         </Link>
 
-        <Link href="/devjourney" className="content-card">
+        <Link href="/my-development-journey" className="content-card">
           <h2>My Development Journey</h2>
           <p>Track my progress and experiences in web development.</p>
         </Link>
