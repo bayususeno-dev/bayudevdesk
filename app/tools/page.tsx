@@ -1,3 +1,44 @@
+import ToolCard from "@/components/ToolCard/ToolCard";
+
+const tools = [
+  {
+    key: "vscode",
+    title: "Code Editor",
+    description: "Visual Studio Code",
+    href: "https://code.visualstudio.com/",
+  },
+  {
+    key: "nextjs",
+    title: "Framework",
+    description: "Next.js",
+    href: "https://nextjs.org/",
+  },
+  {
+    key: "react",
+    title: "Library",
+    description: "React",
+    href: "https://react.dev/",
+  },
+  {
+    key: "git",
+    title: "Version Control",
+    description: "Git",
+    href: "https://git-scm.com/",
+  },
+  {
+    key: "github",
+    title: "Repository",
+    description: "GitHub",
+    href: "https://github.com/",
+  },
+  {
+    key: "vercel",
+    title: "Deployment",
+    description: "Vercel",
+    href: "https://vercel.com/",
+  },
+];
+
 export default function Tools() {
   return (
     <main className="page-container">
@@ -7,36 +48,16 @@ export default function Tools() {
       </header>
 
       <section className="tools-content">
-        <article className="tool-card">
-          <h2>Code Editor</h2>
-          <p>Visual Studio Code</p>
-        </article>
-
-        <article className="tool-card">
-          <h2>Framework</h2>
-          <p>Next.js</p>
-        </article>
-
-        <article className="tool-card">
-          <h2>Library</h2>
-          <p>React</p>
-        </article>
-
-        <article className="tool-card">
-          <h2>Version Control</h2>
-          <p>Git</p>
-        </article>
-
-        <article className="tool-card">
-          <h2>Repository</h2>
-          <p>GitHub</p>
-        </article>
-
-        <article className="tool-card">
-          <h2>Deployment</h2>
-          <p>Vercel</p>
-        </article>
+        {tools.map((tool) => (
+          <ToolCard
+            href={tool.href}
+            key={tool.key}
+            title={tool.title}
+            description={tool.description}
+          />
+        ))}
       </section>
     </main>
   );
 }
+5;

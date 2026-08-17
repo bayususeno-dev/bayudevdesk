@@ -1,3 +1,44 @@
+import NoteCard from "@/components/NoteCard/NoteCard";
+
+const notes = [
+  {
+    key: "html",
+    title: "HTML",
+    description: "Catatan dasar tentang HTML.",
+    href: "/notes/html",
+  },
+  {
+    key: "css",
+    title: "CSS",
+    description: "Catatan tentang styling dan layout.",
+    href: "/notes/css",
+  },
+  {
+    key: "javascript",
+    title: "JavaScript",
+    description: "Catatan mengenai JavaScript yang saya pelajari.",
+    href: "/notes/javascript",
+  },
+  {
+    key: "react",
+    title: "React",
+    description: "Catatan mengenai React yang saya pelajari.",
+    href: "/notes/react",
+  },
+  {
+    key: "nextjs",
+    title: "Next.js",
+    description: "Catatan mengenai Next.js yang saya pelajari.",
+    href: "/notes/nextjs",
+  },
+  {
+    key: "git-github",
+    title: "Git & GitHub",
+    description: "Catatan mengenai Git dan GitHub yang saya pelajari.",
+    href: "/notes/git-github",
+  },
+];
+
 export default function Notes() {
   return (
     <main className="page-container">
@@ -9,25 +50,14 @@ export default function Notes() {
       </header>
 
       <section className="notes-content">
-        <article className="note-card">
-          <h2>JavaScript</h2>
-          <p>Catatan mengenai JavaScript yang saya pelajari.</p>
-        </article>
-
-        <article className="note-card">
-          <h2>React</h2>
-          <p>Catatan mengenai React yang saya pelajari.</p>
-        </article>
-
-        <article className="note-card">
-          <h2>Next.js</h2>
-          <p>Catatan mengenai Next.js yang saya pelajari.</p>
-        </article>
-
-        <article className="note-card">
-          <h2>Git & GitHub</h2>
-          <p>Catatan mengenai Git dan GitHub yang saya pelajari.</p>
-        </article>
+        {notes.map((note) => (
+          <NoteCard
+            key={note.key}
+            title={note.title}
+            description={note.description}
+            href={note.href}
+          />
+        ))}
       </section>
     </main>
   );
