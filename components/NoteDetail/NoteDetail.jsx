@@ -5,7 +5,7 @@ export default function NoteDetail({ title, description, children }) {
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
-      <div className="page-content">
+      <div className="note-detail-content">
         {children}
       </div>
     </main>
