@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link href="/">Logo</Link>
+        <Link className="logo-link" href="/">🏠</Link>
       </div>
 
       <div className="navbar-actions">

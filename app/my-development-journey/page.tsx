@@ -1,7 +1,10 @@
+import Navbar from "@/components/Navbar/Navbar";
+
 export default function MyDevelopmentJourney() {
   return (
     <main className="page-container">
       <header className="page-header">
+        <Navbar />
         <h1>My Development Journey</h1>
         <p>Track my progress and experiences in web development.</p>
       </header>

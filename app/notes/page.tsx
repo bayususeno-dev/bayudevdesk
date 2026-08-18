@@ -1,16 +1,17 @@
+import Navbar from "@/components/Navbar/Navbar";
 import NoteCard from "@/components/NoteCard/NoteCard";
 
 const notes = [
   {
     key: "html",
     title: "HTML",
-    description: "Catatan dasar tentang HTML.",
+    description: "Catatan dasar tentang HTML yang saya pelajari.",
     href: "/notes/html",
   },
   {
     key: "css",
     title: "CSS",
-    description: "Catatan tentang styling dan layout.",
+    description: "Catatan tentang styling dan layout yang saya pelajari.",
     href: "/notes/css",
   },
   {
@@ -43,6 +44,7 @@ export default function Notes() {
   return (
     <main className="page-container">
       <header className="page-header">
+        <Navbar />
         <h1>Notes</h1>
         <p>
           Catatan dan materi yang saya pelajari selama belajar web development.

@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar/Navbar";
 import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function NextJSNote() {
@@ -6,6 +7,7 @@ export default function NextJSNote() {
       title="Next.js"
       description="Catatan mengenai Next.js yang saya pelajari."
     >
+      <Navbar />
       <section>
         <h2>Overview</h2>
 

@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar/Navbar";
 import ToolCard from "@/components/ToolCard/ToolCard";
 
 const tools = [
@@ -43,6 +44,7 @@ export default function Tools() {
   return (
     <main className="page-container">
       <header className="page-header">
+        <Navbar />
         <h1>Tools</h1>
         <p>Alat-alat yang saya gunakan selama belajar web development.</p>
       </header>
