@@ -1,10 +1,7 @@
-import Navbar from "@/components/Navbar/Navbar";
-
 export default function WebDevelopmentGuide() {
   return (
     <main className="page-container">
       <header className="page-header">
-        <Navbar />
         <h1>Web Development Guide</h1>
         <p>
           Panduan membuat website dari nol sampai bisa diakses secara online.

@@ -1,10 +1,8 @@
-import Navbar from "@/components/Navbar/Navbar";
 import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function CssNote() {
   return (
     <NoteDetail title="CSS" description="Catatan tentang styling dan layout.">
-      <Navbar />
       <section>
         <h2>Overview</h2>
 

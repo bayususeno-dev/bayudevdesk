@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar/Navbar";
 import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function ReactNote() {
@@ -7,7 +6,6 @@ export default function ReactNote() {
       title="React"
       description="Catatan mengenai React yang saya pelajari."
     >
-      <Navbar />
       <section>
         <h2>Overview</h2>
 

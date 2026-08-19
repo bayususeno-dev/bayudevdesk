@@ -1,12 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="home">
       <header className="home-header">
-        <Navbar />
-
         <h1>BayuDevDesk</h1>
         <p>Personal Developer Workspace & Learning Guide</p>
       </header>

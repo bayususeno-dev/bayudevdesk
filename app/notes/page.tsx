@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar/Navbar";
 import NoteCard from "@/components/NoteCard/NoteCard";
 
 const notes = [
@@ -44,7 +43,6 @@ export default function Notes() {
   return (
     <main className="page-container">
       <header className="page-header">
-        <Navbar />
         <h1>Notes</h1>
         <p>
           Catatan dan materi yang saya pelajari selama belajar web development.

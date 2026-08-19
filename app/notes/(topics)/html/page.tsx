@@ -1,10 +1,8 @@
-import Navbar from "@/components/Navbar/Navbar";
 import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function HtmlNote() {
   return (
     <NoteDetail title="HTML" description="Catatan dasar tentang HTML.">
-      <Navbar />
       <section>
         <h2>Overview</h2>
 

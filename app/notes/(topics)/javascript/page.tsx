@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar/Navbar";
 import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function JavaScriptNote() {
@@ -7,7 +6,6 @@ export default function JavaScriptNote() {
       title="JavaScript"
       description="Catatan mengenai JavaScript yang saya pelajari."
     >
-      <Navbar />
       <section>
         <h2>Overview</h2>
 

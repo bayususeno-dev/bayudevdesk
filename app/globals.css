@@ -351,6 +351,7 @@ footer {
   line-height: 1.8;
 }
 
+
 .note-detail-content pre {
   padding: 16px;
   margin: 16px 0;
@@ -358,16 +359,21 @@ footer {
   border-radius: 8px;
   overflow-x: auto;
   color: #00ffea;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .note-detail-content code {
   font-family: Consolas, monospace;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
 
 /* Notes */
 /* ALL PAGES CONTAINER */
 .page-container {
-  max-width: 1000px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 140px 24px 60px;
 }

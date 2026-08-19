@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar/Navbar";
 import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function GitGithubNote() {
@@ -7,7 +6,6 @@ export default function GitGithubNote() {
       title="Git & GitHub"
       description="Catatan mengenai Git dan GitHub yang saya pelajari."
     >
-      <Navbar />
       <section>
         <h2>Overview</h2>
 
