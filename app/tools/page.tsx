@@ -54,6 +54,7 @@ export default function Tools() {
             key={tool.key}
             title={tool.title}
             description={tool.description}
+            image={`/tools/${tool.key}.png`}
           />
         ))}
       </section>

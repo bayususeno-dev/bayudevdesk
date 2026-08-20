@@ -270,6 +270,25 @@ footer {
   gap: 24px;
 }
 
+.tool-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.tool-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover .tool-image img {
+  transform: scale(2.5);
+  margin-bottom: 30px;
+}
+
 /* Tools */
 
 /* My Development Journey */
