@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "components/Navbar/Navbar.jsx", "components/Search/Search.jsx", "components/Hamburger/Hamburger.jsx"  ],
+, "components/Navbar/Navbar.jsx", "components/Search/Search.jsx", "components/Hamburger/Hamburger.jsx", "components/JourneyNavigation/JourneyNavigation.jsx"  ],
   "exclude": ["node_modules"]
 }

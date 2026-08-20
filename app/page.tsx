@@ -37,10 +37,6 @@ export default function Home() {
           <p>Track my progress and experiences in web development.</p>
         </Link>
       </section>
-
-      <footer>
-        <p>BayuDevDesk — My Web Development Journey</p>
-      </footer>
     </main>
   );
 }
