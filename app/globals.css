@@ -28,107 +28,241 @@ footer {
 }
 
 /* NAVBAR */
+
 .navbar {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 20px;
-  background: rgb(94, 80, 79);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+
+  background: rgba(245, 241, 239, 0.92);
+  border-bottom: 1px solid #e4deda;
+
   z-index: 1000;
 }
 
-.menu-icon {
-  cursor: pointer;
-}
+.navbar-inner {
+  width: min(1120px, calc(100% - 40px));
+  height: 100%;
+  margin: 0 auto;
 
-.search-icon {
-  cursor: pointer;
-  font-size: 20px;
-  border: none;
-  background: none;
-  padding: 0;
-}
-
-.search {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.search input {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  width: 200px;
 }
 
 .logo {
-  cursor: pointer;
-  font-size: 20px;
+  flex-shrink: 0;
 }
 
 .logo-link {
+  color: #252323;
   text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navbar-navigation {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: 48px;
+}
+
+.navbar-navigation a {
+  color: #706b69;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: color 160ms ease;
+}
+
+.navbar-navigation a:hover {
+  color: #252323;
 }
 
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
+  margin-left: auto;
 }
 
 /* NAVBAR */
 
+/* SEARCH */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-icon {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #252323;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 1;
+
+  transition:
+    background-color 160ms ease;
+}
+
+.search-icon:hover {
+  background: #ebe5e2;
+}
+
+.search input {
+  width: 200px;
+  height: 34px;
+  padding: 0 12px;
+
+  border: 1px solid #e4deda;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #252323;
+
+  font-size: 14px;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #cdbbb7;
+}
+
+/* SEARCH */
+
 /* HAMBURGER */
+
 .hamburger {
   position: relative;
 }
 
 .hamburger-icon {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
   padding: 0;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #252323;
+
+  cursor: pointer;
+
+  font-size: 19px;
+  line-height: 1;
+
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
+
+.hamburger-icon:hover {
+  background: #ebe5e2;
+}
+
+/* DROPDOWN */
 
 .hamburger-menu {
   position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  top: 44px;
+  right: 0;
+
+  width: 230px;
+  padding: 8px;
+
+  background: #ffffff;
+  border: 1px solid #e4deda;
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 30px rgba(37, 35, 35, 0.08),
+    0 2px 8px rgba(37, 35, 35, 0.04);
 }
 
-.hamburger-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* HEADER */
+
+.hamburger-header {
+  padding: 9px 10px 8px;
+
+  color: #a49b98;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.hamburger-menu li {
-  margin-top: 5px;
+/* MAIN NAVIGATION */
+
+.hamburger-navigation {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.hamburger-menu li:hover {
-  background: #00ffea;
+/* SECONDARY NAVIGATION */
+
+.hamburger-secondary-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
+
+/* LINKS */
 
 .hamburger-link {
-  display: block;
-  padding: 5px 1px;
+  display: flex;
+  align-items: center;
+
+  min-height: 36px;
+  padding: 8px 10px;
+
+  border-radius: 7px;
+
+  color: #3d3938;
   text-decoration: none;
-  font-size: 15px;
-  color: #222;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+
+.hamburger-link:hover {
+  background: #f5f1ef;
+  color: #8b5e58;
+}
+
+/* DIVIDER */
+
+.hamburger-divider {
+  height: 1px;
+  margin: 7px 8px;
+
+  background: #e8e2df;
 }
 
 /* HAMBURGER */
@@ -587,6 +721,18 @@ footer {
   }
 
   /* NAVBAR */
+
+
+  /* HAMBURGER */
+  .navbar-navigation {
+    display: none;
+  }
+
+  .hamburger-navigation {
+    display: flex;
+  }
+
+  /* HAMBURGER */
 
   /* NOTES */
   .notes-content {
