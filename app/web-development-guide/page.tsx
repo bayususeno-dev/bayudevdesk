@@ -4,224 +4,218 @@ export default function WebDevelopmentGuide() {
       <header className="page-header">
         <h1>Web Development Guide</h1>
         <p>
-          Panduan membuat website dari nol sampai bisa diakses secara online.
+          A not-too-simple guide to building a website from scratch and getting
+          it online. AI can write the code, but you still need to know what
+          you’re doing.
         </p>
       </header>
 
       <section className="guide-section">
-        <h2>1. Persiapan</h2>
+        <h2>1. Getting Ready</h2>
         <p>
-          Sebelum mulai membuat website, siapkan beberapa tools dasar yang akan
-          digunakan selama proses development.
+          Before you start building, let’s get a few basic tools ready. These
+          are the tools you’ll probably use throughout the development process.
         </p>
 
         <ul>
           <li>
-            <strong>Text Editor</strong> — digunakan untuk menulis dan mengelola
-            kode, seperti VS Code.
+            <strong>Text Editor</strong> — this is where you’ll write and manage
+            your code. VS Code is a popular choice.
           </li>
           <li>
-            <strong>Node.js</strong> — digunakan untuk menjalankan JavaScript di
-            luar browser dan mengelola package pada project.
+            <strong>Node.js</strong> — lets you run JavaScript outside the
+            browser and manage packages for your project.
           </li>
           <li>
-            <strong>Git</strong> — digunakan untuk mencatat dan mengelola
-            perubahan pada project.
+            <strong>Git</strong> — helps you keep track of changes in your
+            project.
           </li>
           <li>
-            <strong>GitHub</strong> — digunakan untuk menyimpan repository
-            secara online dan mengelola project bersama Git.
+            <strong>GitHub</strong> — gives you a place to store your Git
+            repository online.
           </li>
           <li>
-            <strong>Browser</strong> — digunakan untuk menjalankan dan menguji
-            website yang dibuat.
+            <strong>Browser</strong> — you’ll use this to run and test the
+            website you’re building.
           </li>
         </ul>
       </section>
 
       <section className="guide-section">
-        <h2>2. Memilih Teknologi</h2>
+        <h2>2. Choosing Your Technology</h2>
         <p>
-          Pilih teknologi berdasarkan kebutuhan project. Untuk website
-          sederhana, HTML, CSS, dan JavaScript sudah cukup. Untuk project yang
-          lebih kompleks, framework dan library dapat membantu membuat
-          development lebih terstruktur.
+          Now you need to decide what you’re going to build with. The right
+          choice depends on what your project actually needs.
         </p>
 
         <ul>
           <li>
-            <strong>HTML</strong> — digunakan untuk membuat struktur halaman.
+            <strong>HTML</strong> — gives your page its structure.
           </li>
           <li>
-            <strong>CSS</strong> — digunakan untuk mengatur tampilan dan layout.
+            <strong>CSS</strong> — controls how your website looks and how the
+            layout works.
           </li>
           <li>
-            <strong>JavaScript</strong> — digunakan untuk menambahkan logika dan
-            interaksi pada website.
+            <strong>JavaScript</strong> — adds logic and interaction to your
+            website.
           </li>
           <li>
-            <strong>React</strong> — library JavaScript untuk membangun
-            antarmuka menggunakan component.
+            <strong>React</strong> — a JavaScript library for building
+            interfaces with reusable components.
           </li>
           <li>
-            <strong>Next.js</strong> — framework React yang menyediakan berbagai
-            fitur untuk membangun aplikasi web.
+            <strong>Next.js</strong> — a React framework with tools and features
+            for building modern web applications.
           </li>
         </ul>
 
         <p>
-          Tidak semua project membutuhkan seluruh teknologi tersebut. Tentukan
-          teknologi berdasarkan kebutuhan dan tujuan project.
+          You don’t need to use all of these technologies. For a simple website,
+          HTML, CSS, and JavaScript might be more than enough. Pick what makes
+          sense for the project you’re working on.
         </p>
       </section>
 
       <section className="guide-section">
-        <h2>3. Membuat Project</h2>
+        <h2>3. Creating the Project</h2>
         <p>
-          Setelah menentukan teknologi yang akan digunakan, buat project baru
-          sebagai tempat untuk mengembangkan website.
+          Once you know what you’re going to use, it’s time to create the
+          project. Think of this as setting up your workspace before you start
+          building.
         </p>
 
         <ol>
           <li>
-            Install <strong>Node.js</strong> jika belum tersedia.
+            Install <strong>Node.js</strong> if you don’t have it already.
           </li>
-          <li>Pilih framework atau teknologi yang akan digunakan.</li>
+          <li>Choose the framework or technology you want to use.</li>
           <li>
-            Buat project baru menggunakan tool atau command yang disediakan oleh
-            teknologi tersebut.
+            Create a new project using the tools or commands provided by that
+            technology.
           </li>
           <li>
-            Buka folder project menggunakan <strong>VS Code</strong>.
+            Open the project folder in <strong>VS Code</strong>.
           </li>
-          <li>Install dependency yang dibutuhkan project.</li>
+          <li>Install any dependencies your project needs.</li>
           <li>
-            Jalankan development server untuk memastikan project dapat berjalan.
+            Start the development server and make sure everything is working.
+          </li>
+        </ol>
+
+        <p>If the project runs successfully, you’re ready to start building.</p>
+      </section>
+
+      <section className="guide-section">
+        <h2>4. Setting Up Git & GitHub</h2>
+        <p>
+          Before we start writing code, let’s set up Git. It might feel like an
+          extra step at first, but having version control from the beginning
+          makes it much easier to keep track of your work and recover when
+          something goes wrong.
+        </p>
+
+        <ol>
+          <li>Initialize Git.</li>
+          <li>Create a repository on GitHub.</li>
+          <li>Connect your local project to the GitHub repository.</li>
+          <li>
+            Check your changes with <code>git status</code>.
+          </li>
+          <li>
+            Add your changes to the staging area with <code>git add</code>.
+          </li>
+          <li>
+            Save your changes with a commit using <code>git commit</code>.
+          </li>
+          <li>
+            Send your commits to GitHub with <code>git push</code>.
           </li>
         </ol>
 
         <p>
-          Setelah project berhasil dijalankan, development dapat dimulai dengan
-          membuat struktur halaman dan komponen yang dibutuhkan.
+          Try to make commits when you finish a meaningful change or a small
+          part of the project. It makes your development history much easier to
+          understand later.
         </p>
       </section>
 
       <section className="guide-section">
-        <h2>4. Mulai Coding</h2>
+        <h2>5. Start Coding</h2>
         <p>
-          Setelah project siap, mulai bangun website secara bertahap berdasarkan
-          struktur dan fitur yang dibutuhkan.
+          This is where things start getting interesting. Build the website step
+          by step instead of trying to do everything at once.
         </p>
 
         <ol>
-          <li>Buat struktur halaman sesuai kebutuhan website.</li>
-          <li>Buat component untuk bagian yang dapat digunakan kembali.</li>
-          <li>Tambahkan styling untuk mengatur tampilan dan layout.</li>
+          <li>Build the page structure you need.</li>
           <li>
-            Tambahkan logic dan interaksi menggunakan JavaScript atau teknologi
-            yang digunakan.
+            Create reusable components for parts you’ll use more than once.
           </li>
+          <li>Add styling to control the look and layout.</li>
           <li>
-            Jalankan dan periksa website secara berkala selama proses
-            development.
+            Add logic and interactions using JavaScript or whatever technology
+            you’re working with.
           </li>
-          <li>Perbaiki error dan lakukan perubahan secara bertahap.</li>
+          <li>Run the website regularly while you’re building it.</li>
+          <li>Fix errors and improve things as you go.</li>
         </ol>
 
         <p>
-          Sebaiknya project dikembangkan secara bertahap. Selesaikan satu
-          bagian, periksa hasilnya, lalu lanjutkan ke bagian berikutnya.
-        </p>
-      </section>
-
-      <section className="guide-section">
-        <h2>5. Git & GitHub</h2>
-        <p>
-          Gunakan Git untuk mencatat perubahan pada project dan GitHub untuk
-          menyimpan repository secara online.
-        </p>
-
-        <ol>
-          <li>Inisialisasi Git pada project jika belum menggunakan Git.</li>
-          <li>Buat repository di GitHub.</li>
-          <li>Hubungkan project lokal dengan repository GitHub.</li>
-          <li>
-            Periksa perubahan menggunakan <code>git status</code>.
-          </li>
-          <li>
-            Masukkan perubahan ke staging area menggunakan <code>git add</code>.
-          </li>
-          <li>
-            Simpan perubahan dengan membuat commit menggunakan{" "}
-            <code>git commit</code>.
-          </li>
-          <li>
-            Kirim commit ke GitHub menggunakan <code>git push</code>.
-          </li>
-        </ol>
-
-        <p>
-          Commit sebaiknya dibuat setelah menyelesaikan perubahan atau bagian
-          tertentu dari project agar riwayat development tetap mudah dipahami.
+          A good way to work is to take things one piece at a time. Finish one
+          part, check that it works, then move on to the next one. You don’t
+          have to build the whole thing in one go.
         </p>
       </section>
 
       <section className="guide-section">
         <h2>6. Testing</h2>
         <p>
-          Sebelum website dipublikasikan, periksa setiap bagian untuk memastikan
-          website berjalan sesuai yang diharapkan.
+          Before putting your website online, take some time to check that
+          everything actually works. And honestly, you don’t have to wait until
+          the end to do this.
         </p>
 
         <ul>
-          <li>Periksa setiap halaman dan pastikan halaman dapat dibuka.</li>
+          <li>Open each page and make sure everything loads correctly.</li>
+          <li>Check your links and make sure they point to the right pages.</li>
           <li>
-            Periksa semua link dan pastikan mengarah ke halaman yang benar.
+            Test buttons, menus, forms, and any other interactions you’ve built.
           </li>
-          <li>
-            Periksa interaksi seperti button, menu, form, dan fitur lainnya.
-          </li>
-          <li>Periksa tampilan pada berbagai ukuran layar.</li>
-          <li>Periksa error yang muncul pada browser dan terminal.</li>
-          <li>
-            Periksa kembali project setelah melakukan perubahan atau perbaikan.
-          </li>
+          <li>Check how the website looks on different screen sizes.</li>
+          <li>Look for errors in the browser and terminal.</li>
+          <li>Test again whenever you make an important change.</li>
         </ul>
 
         <p>
-          Testing sebaiknya dilakukan secara berkala selama development, bukan
-          hanya setelah seluruh website selesai dibuat.
+          Testing while you build is much easier than finding a bunch of
+          problems after everything is supposedly finished.
         </p>
       </section>
 
       <section className="guide-section">
         <h2>7. Deployment</h2>
         <p>
-          Setelah website selesai dikembangkan dan diuji, deploy project agar
-          dapat diakses melalui internet.
+          Once your website is working and you’re happy with it, you can deploy
+          it and make it available on the internet.
         </p>
 
         <ol>
+          <li>Choose a deployment platform that fits your project.</li>
+          <li>Connect your project repository to the platform.</li>
           <li>
-            Pilih platform deployment yang sesuai dengan teknologi yang
-            digunakan.
+            Configure anything your project needs, such as environment variables
+            or build settings.
           </li>
-          <li>Hubungkan repository project dengan platform deployment.</li>
-          <li>
-            Konfigurasi project jika diperlukan, seperti environment variables
-            atau build settings.
-          </li>
-          <li>Jalankan proses deployment.</li>
-          <li>
-            Buka website melalui URL yang diberikan oleh platform deployment.
-          </li>
-          <li>Lakukan pengecekan kembali setelah website berhasil online.</li>
+          <li>Run the deployment.</li>
+          <li>Open your website using the URL provided by the platform.</li>
+          <li>Check the live website one more time after deployment.</li>
         </ol>
 
         <p>
-          Deployment bukan berarti proses development selesai. Setelah website
-          online, project masih dapat diperbarui, diperbaiki, dan dikembangkan
-          lebih lanjut.
+          And that’s not really the end. Once your website is online, you can
+          keep improving it, fixing bugs, adding features, and experimenting
+          with new ideas.
         </p>
       </section>
     </main>

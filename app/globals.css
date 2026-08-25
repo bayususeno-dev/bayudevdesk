@@ -355,37 +355,116 @@ footer {
 /* HOME */
 /* PAGE STYLES */
 .page-header {
-  text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .page-header h1 {
-  margin-bottom: 12px;
+  margin: 0 0 12px;
+
+  color: #252323;
+
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
 }
 
 .page-header p {
-  line-height: 1.6;
+  max-width: 600px;
+  margin: 0;
+
+  color: #706b69;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 140px 24px 60px;
 }
 
 /* PAGE STYLES */
 
 /* Web Development Guide */
+
 .guide-section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid #e4deda;
+  border-radius: 16px;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.guide-section:hover {
+  border-color: #cdbbb7;
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
 }
 
 .guide-section h2 {
-  margin-bottom: 12px;
+  margin: 0 0 14px;
+
+  color: #252323;
+
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
 .guide-section p {
-  line-height: 1.6;
+  margin: 10px 0 18px;
+
+  color: #706b69;
+
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 .guide-section ul,
 .guide-section ol {
+  margin: 18px 0 0;
   padding-left: 24px;
+
+  color: #3d3938;
+
+  font-size: 15px;
   line-height: 1.8;
+}
+
+.guide-section li {
+  padding-left: 4px;
+  margin-bottom: 8px;
+}
+
+.guide-section li:last-child {
+  margin-bottom: 0;
+}
+
+.guide-section li::marker {
+  color: #8b5e58;
+}
+
+.guide-section strong {
+  color: #252323;
+  font-weight: 600;
+}
+
+.guide-section code {
+  padding: 3px 6px;
+
+  border: 1px solid #e4deda;
+  border-radius: 5px;
+
+  background: #f5f1ef;
+  color: #8b5e58;
+
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
 }
 
 /* Web Development Guide */
@@ -569,14 +648,7 @@ footer {
 }
 
 /* Notes */
-/* ALL PAGES CONTAINER */
-.page-container {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 140px 24px 60px;
-}
 
-/* ALL PAGES CONTAINER */
 
 
 
@@ -639,4 +711,14 @@ footer {
   }
 
   /* NOTES */
+
+  /* PAGES */
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  .guide-section {
+    padding: 22px;
+    /* PAGES */
+  }
 }
