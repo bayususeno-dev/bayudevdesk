@@ -299,6 +299,81 @@ footer {
   margin-bottom: 0;
 }
 
+/* ========================= CONTACT */
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid #e4deda;
+  border-radius: 16px;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.contact-section:hover {
+  border-color: #cdbbb7;
+
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
+}
+
+.contact-section p {
+  margin: 0;
+
+  color: #706b69;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.contact-link {
+  padding: 10px 18px;
+
+  border: 1px solid #e4deda;
+  border-radius: 8px;
+
+  color: #8b5e58;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.contact-link:hover {
+  background: #f5f1ef;
+  border-color: #cdbbb7;
+}
+
 
 
 /* ========================= HOME ========================= */
