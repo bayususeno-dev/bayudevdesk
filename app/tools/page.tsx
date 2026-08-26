@@ -44,7 +44,10 @@ export default function Tools() {
     <main className="page-container">
       <header className="page-header">
         <h1>Tools</h1>
-        <p>Alat-alat yang saya gunakan selama belajar web development.</p>
+        <p>
+          The tools and technologies I use while learning and building for the
+          web.
+        </p>
       </header>
 
       <section className="tools-content">
@@ -61,4 +64,3 @@ export default function Tools() {
     </main>
   );
 }
-5;
