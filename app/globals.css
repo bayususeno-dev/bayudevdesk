@@ -262,6 +262,43 @@ footer {
   background: #e8e2df;
 }
 
+/* ========================= ABOUT */
+
+.about-header {
+  text-align: center;
+}
+
+.about-section {
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid #e4deda;
+  border-radius: 16px;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.about-section:hover {
+  border-color: #cdbbb7;
+
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
+}
+
+.about-section p {
+  margin: 0 0 18px;
+
+  color: #706b69;
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+
 
 
 /* ========================= HOME ========================= */
