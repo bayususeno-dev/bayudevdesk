@@ -8,12 +8,12 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f1ef;
-  color: #252323;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #f5f1ef;
+  color: #252323;
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -27,7 +27,7 @@ footer {
   font-size: 14px;
 }
 
-/* NAVBAR */
+/* ========================= NAVBAR ========================= */
 
 .navbar {
   position: fixed;
@@ -78,7 +78,7 @@ footer {
   font-size: 14px;
   font-weight: 500;
 
-  transition: color 160ms ease;
+  transition: color 180ms ease;
 }
 
 .navbar-navigation a:hover {
@@ -92,9 +92,8 @@ footer {
   margin-left: auto;
 }
 
-/* NAVBAR */
+/* ========================= SEARCH =========================*/
 
-/* SEARCH */
 .search {
   display: flex;
   align-items: center;
@@ -118,7 +117,7 @@ footer {
   line-height: 1;
 
   transition:
-    background-color 160ms ease;
+    background-color 180ms ease;
 }
 
 .search-icon:hover {
@@ -144,22 +143,20 @@ footer {
   border-color: #cdbbb7;
 }
 
-/* SEARCH */
-
-/* HAMBURGER */
+/* ========================= HAMBURGER ========================= */
 
 .hamburger {
   position: relative;
 }
 
 .hamburger-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 34px;
   height: 34px;
   padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 0;
   border-radius: 8px;
@@ -173,15 +170,15 @@ footer {
   line-height: 1;
 
   transition:
-    background-color 160ms ease,
-    color 160ms ease;
+    background-color 180ms ease,
+    color 180ms ease;
 }
 
 .hamburger-icon:hover {
   background: #ebe5e2;
 }
 
-/* DROPDOWN */
+/* ========================= DROPDOWN */
 
 .hamburger-menu {
   position: absolute;
@@ -200,7 +197,7 @@ footer {
     0 2px 8px rgba(37, 35, 35, 0.04);
 }
 
-/* HEADER */
+/* ========================= HEADER */
 
 .hamburger-header {
   padding: 9px 10px 8px;
@@ -213,7 +210,7 @@ footer {
   text-transform: uppercase;
 }
 
-/* MAIN NAVIGATION */
+/* ========================= MAIN NAVIGATION */
 
 .hamburger-navigation {
   display: none;
@@ -221,7 +218,7 @@ footer {
   gap: 2px;
 }
 
-/* SECONDARY NAVIGATION */
+/* ========================= SECONDARY NAVIGATION */
 
 .hamburger-secondary-navigation {
   display: flex;
@@ -229,7 +226,7 @@ footer {
   gap: 2px;
 }
 
-/* LINKS */
+/* ========================= LINKS */
 
 .hamburger-link {
   display: flex;
@@ -256,7 +253,7 @@ footer {
   color: #8b5e58;
 }
 
-/* DIVIDER */
+/* ========================= DIVIDER */
 
 .hamburger-divider {
   height: 1px;
@@ -265,24 +262,25 @@ footer {
   background: #e8e2df;
 }
 
-/* HAMBURGER */
 
-/* HOME */
+
+/* ========================= HOME ========================= */
 
 .home {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
 }
 
-/* HERO */
+/* ========================= HERO */
 
 .home-hero {
   min-height: calc(100vh - 64px);
+  padding: 80px 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 80px 0;
 }
 
 .hero-label {
@@ -309,17 +307,21 @@ footer {
 
 .home-hero h1 {
   margin: 0;
+
   font-size: clamp(56px, 8vw, 88px);
   line-height: 0.95;
   letter-spacing: -0.055em;
+
   color: #252323;
 }
 
 .hero-description {
   max-width: 560px;
   margin: 28px 0 0;
+
   font-size: 18px;
   line-height: 1.7;
+
   color: #706b69;
 }
 
@@ -327,15 +329,21 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+
   margin-top: 32px;
   padding: 13px 20px;
+
   border: 1px solid #8b5e58;
   border-radius: 999px;
+
   background: #8b5e58;
   color: #ffffff;
+
   text-decoration: none;
+
   font-size: 14px;
   font-weight: 600;
+
   transition:
     transform 180ms ease,
     background-color 180ms ease,
@@ -349,11 +357,20 @@ footer {
 
 .hero-button:hover {
   transform: translateY(-2px);
+
   box-shadow: 0 8px 20px rgba(139, 94, 88, 0.16);
 }
 
-/* HOME */
-/* PAGE STYLES */
+
+
+/* ========================= PAGE ========================= */
+
+.page-container {
+  max-width: min(750px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 140px 0 60px;
+}
+
 .page-header {
   margin-bottom: 36px;
 }
@@ -378,15 +395,9 @@ footer {
   line-height: 1.7;
 }
 
-.page-container {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 140px 24px 60px;
-}
 
-/* PAGE STYLES */
 
-/* Web Development Guide */
+/* ========================= Web Development Guide ========================= */
 
 .guide-section {
   margin-bottom: 20px;
@@ -403,6 +414,7 @@ footer {
 
 .guide-section:hover {
   border-color: #cdbbb7;
+
   box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
 }
 
@@ -437,8 +449,8 @@ footer {
 }
 
 .guide-section li {
-  padding-left: 4px;
   margin-bottom: 8px;
+  padding-left: 4px;
 }
 
 .guide-section li:last-child {
@@ -467,18 +479,39 @@ footer {
   font-size: 0.9em;
 }
 
-/* Web Development Guide */
 
-/* Tools */
+
+/* ========================= Tools ========================= */
+.tools-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
 .tool-card {
   display: block;
+
   padding: 24px;
+
   border: 1px solid #e4deda;
   border-radius: 16px;
+  background: white;
+
   text-decoration: none;
   color: inherit;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: white;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cdbbb7;
+
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
 }
 
 .tool-card h2 {
@@ -492,97 +525,143 @@ footer {
 
 .tool-card p {
   margin: 0;
+
   color: #706b69;
-  line-height: 1.7;
+
   font-size: 15px;
+  line-height: 1.7;
 }
 
-.tool-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
-  border-color: #cdbbb7;
-}
 
 .tool-card::after {
-  content: " Visit →";
   display: block;
+
   margin-top: 16px;
-  font-size: 14px;
+
   color: #8b5e58;
+
+  content: " Visit →";
+
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
-}
-
-.tools-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
 }
 
 .tool-image {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-bottom: 18px;
 }
 
 .tool-image img {
   width: 80px;
   height: 80px;
+
   object-fit: contain;
+
   transition: transform 0.3s ease;
 }
 
 .tool-card:hover .tool-image img {
-  transform: scale(2.5);
-  margin-bottom: 30px;
+  transform: scale(2.0);
 }
 
-/* Tools */
 
-/* My Development Journey */
+
+/* ========================= My Development Journey ========================= */
 .journey-item {
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 24px;
+
+  background: #ffffff;
+  border: 1px solid #e4deda;
+  border-radius: 16px;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.journey-item:hover {
+  border-color: #cdbbb7;
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
 }
 
 .journey-item h2 {
-  margin-bottom: 8px;
+  color: #252323;
 }
 
 .journey-item p {
-  line-height: 1.6;
+  margin: 0;
+
+  color: #706b69;
+
+  line-height: 1.75;
+}
+
+.journey-item p:last-child {
+  margin-bottom: 0;
 }
 
 .journey-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  justify-content: space-between;
+
+  margin-top: 36px;
 }
 
 .journey-navigation a {
-  color: inherit;
+  color: #8b5e58;
   text-decoration: none;
-  font-weight: bold;
+
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .journey-navigation a:hover {
   text-decoration: underline;
 }
 
-/* My Development Journey */
 
-/* Notes */
+
+/* ========================= Notes ========================= */
+.notes-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.notes-content a {
+  text-decoration: none;
+}
+
 .note-card {
   display: block;
+
   padding: 24px;
+
   border: 1px solid #e4deda;
   border-radius: 16px;
   background: #ffffff;
+
   text-decoration: none;
   color: inherit;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cdbbb7;
+
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
 }
 
 .note-card h2 {
@@ -602,64 +681,62 @@ footer {
   line-height: 1.6;
 }
 
-.note-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
-}
-
-.notes-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.notes-content a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* NOTE DETAIL */
+/* ========================= NOTE DETAIL */
 
 .note-detail-content {
   color: #3d3938;
+
   font-size: 16px;
   line-height: 1.8;
 }
 
 .note-detail-content h2 {
   margin-top: 36px;
-  margin-bottom: 12px;
+
   color: #252323;
 
   font-size: 24px;
   line-height: 1.3;
 }
 
+.note-detail-content h2:first-child {
+  margin-top: 0;
+}
+
 .note-detail-content h3 {
-  margin-top: 28px;
-  margin-bottom: 10px;
+  margin: 28px 0 10px;
+
   color: #252323;
+
+  font-size: 18px;
 }
 
 .note-detail-content p {
-  margin-bottom: 18px;
+  margin: 0 0 18px;
 }
 
 .note-detail-content ul,
 .note-detail-content ol {
+  margin: 0 0 20px;
   padding-left: 24px;
-  margin-bottom: 20px;
 }
 
+.note-detail-content li {
+  margin-bottom: 8px;
+}
+
+.note-detail-content li::marker {
+  color: #8b5e58;
+}
 
 .note-detail-content pre {
-  padding: 18px;
   margin: 20px 0;
+  padding: 18px;
+
+  overflow-x: auto;
 
   background: #252323;
   border-radius: 10px;
-
-  overflow-x: auto;
 
   color: #00e1ff;
 
@@ -677,21 +754,22 @@ footer {
 
   border: 1px solid #e4deda;
   border-radius: 5px;
-
   background: #f5f1ef;
+
   color: #8b5e58;
 
   font-size: 0.9em;
 }
 
-/* Notes */
 
 
 
+
+/* ========================= RESPONSIVE ========================= */
 
 @media (max-width: 768px) {
 
-  /* HOME */
+  /* ========================= HOME ========================= */
 
   .home {
     width: min(100% - 28px, 1120px);
@@ -711,8 +789,39 @@ footer {
   }
 
 
-  /* HOME */
-  /* TOOLS */
+
+  /* ========================= NAVBAR ========================= */
+  .search input {
+    width: 120px;
+  }
+
+  .navbar-navigation {
+    display: none;
+  }
+
+
+
+  /* ========================= HAMBURGER ========================= */
+
+  .hamburger-navigation {
+    display: flex;
+  }
+
+
+
+  /* ========================= PAGES ========================= */
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  /* ========================= GUIDE */
+  .guide-section {
+    padding: 22px;
+  }
+
+
+
+  /* ========================= TOOLS ========================= */
   .tools-content {
     grid-template-columns: 1fr;
   }
@@ -721,42 +830,19 @@ footer {
     padding: 24px;
   }
 
-  /* TOOLS */
-
-  /* NAVBAR */
-  .search input {
-    width: 120px;
-  }
-
-  /* NAVBAR */
 
 
-  /* HAMBURGER */
-  .navbar-navigation {
-    display: none;
-  }
-
-  .hamburger-navigation {
-    display: flex;
-  }
-
-  /* HAMBURGER */
-
-  /* NOTES */
+  /* ========================= NOTES ========================= */
   .notes-content {
     grid-template-columns: 1fr;
   }
 
-  /* NOTES */
-
-  /* PAGES */
-  .page-header h1 {
-    font-size: 34px;
-  }
-
-  .guide-section {
+  /* ========================= JOURNEY ========================= */
+  .journey-item {
     padding: 22px;
   }
 
-  /* PAGES */
+  .journey-navigation {
+    margin-top: 24px;
+  }
 }

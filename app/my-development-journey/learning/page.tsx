@@ -8,7 +8,7 @@ export default function Learning() {
         <p>What I have learned along the way.</p>
       </header>
 
-      <div className="page-content">
+      <div className="journey-item">
         <h2>Building the Fundamentals</h2>
 
         <p>

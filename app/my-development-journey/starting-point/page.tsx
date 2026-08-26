@@ -8,7 +8,7 @@ export default function StartingPoint() {
         <p>Where my journey into web development began.</p>
       </header>
 
-      <div className="page-content">
+      <div className="journey-item">
         <p>
           My journey into web development started with curiosity about how AI
           systems are built and how the technologies behind them work. For now,

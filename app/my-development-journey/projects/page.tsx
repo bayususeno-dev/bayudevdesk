@@ -8,7 +8,7 @@ export default function Projects() {
         <p>Projects I have built while learning.</p>
       </header>
 
-      <div className="page-content">
+      <div className="journey-item">
         <h2>BayuDevDesk</h2>
 
         <p>

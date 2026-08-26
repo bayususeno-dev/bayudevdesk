@@ -8,7 +8,7 @@ export default function NextGoal() {
         <p>What I want to achieve next.</p>
       </header>
 
-      <div className="page-content">
+      <div className="journey-item">
         <h2>Strengthen My Foundation</h2>
 
         <p>
