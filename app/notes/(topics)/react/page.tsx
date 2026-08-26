@@ -4,25 +4,24 @@ export default function ReactNote() {
   return (
     <NoteDetail
       title="React"
-      description="Catatan mengenai React yang saya pelajari."
+      description="Notes on React that I’ve been learning."
     >
       <section>
         <h2>Overview</h2>
 
         <p>
-          React adalah library JavaScript yang digunakan untuk membangun user
-          interface menggunakan component.
+          React is a JavaScript library used to build user interfaces using
+          components.
         </p>
 
         <p>
-          React memungkinkan halaman dibangun dari bagian-bagian kecil yang
-          dapat digunakan kembali sehingga struktur aplikasi menjadi lebih
-          terorganisir.
+          React lets us build pages from smaller, reusable pieces, making the
+          structure of an application easier to organize and maintain.
         </p>
 
         <p>
-          React menggunakan konsep seperti component, props, state, dan event
-          untuk membangun interface yang interaktif.
+          React uses concepts such as components, props, state, and events to
+          build interactive user interfaces.
         </p>
       </section>
 
@@ -31,8 +30,8 @@ export default function ReactNote() {
 
         <h3>Components</h3>
         <p>
-          Component adalah bagian dari interface yang dapat dibuat dan digunakan
-          kembali.
+          A component is a part of the interface that can be created and reused
+          throughout an application.
         </p>
 
         <pre>
@@ -43,8 +42,8 @@ export default function ReactNote() {
 
         <h3>JSX</h3>
         <p>
-          JSX memungkinkan kita menulis struktur UI dengan syntax yang mirip
-          HTML di dalam JavaScript atau TypeScript.
+          JSX lets us write UI structures using syntax that looks similar to
+          HTML inside JavaScript or TypeScript.
         </p>
 
         <pre>
@@ -53,8 +52,8 @@ export default function ReactNote() {
 
         <h3>Props</h3>
         <p>
-          Props digunakan untuk mengirim data dari component parent ke component
-          child.
+          Props are used to pass data from a parent component to a child
+          component.
         </p>
 
         <pre>
@@ -65,8 +64,8 @@ export default function ReactNote() {
 
         <h3>State</h3>
         <p>
-          State digunakan untuk menyimpan data yang dapat berubah selama
-          component berjalan.
+          State is used to store data that can change while a component is
+          running.
         </p>
 
         <pre>
@@ -75,8 +74,8 @@ export default function ReactNote() {
 
         <h3>Event Handling</h3>
         <p>
-          React dapat menangani event seperti click, input, submit, dan event
-          lainnya menggunakan event handler.
+          React can handle events such as clicks, input, submit, and other user
+          interactions using event handlers.
         </p>
 
         <pre>
@@ -87,8 +86,8 @@ export default function ReactNote() {
 
         <h3>Conditional Rendering</h3>
         <p>
-          Conditional rendering digunakan untuk menampilkan UI berdasarkan
-          kondisi tertentu.
+          Conditional rendering is used to display UI based on a certain
+          condition.
         </p>
 
         <pre>
@@ -97,8 +96,8 @@ export default function ReactNote() {
 
         <h3>Rendering Lists</h3>
         <p>
-          Method seperti map dapat digunakan untuk menampilkan sekumpulan data
-          sebagai element React.
+          Methods such as <code>map</code> can be used to render a collection of
+          data as React elements.
         </p>
 
         <pre>
@@ -111,9 +110,8 @@ export default function ReactNote() {
 
         <h3>Keys</h3>
         <p>
-          Key digunakan React untuk mengidentifikasi setiap element ketika
-          melakukan rendering list. Key harus unik di antara sibling dan tidak
-          harus berupa angka.
+          Keys help React identify each element when rendering a list. A key
+          should be unique among its siblings and does not have to be a number.
         </p>
 
         <pre>
@@ -129,8 +127,8 @@ export default function ReactNote() {
 
         <h3>Hooks</h3>
         <p>
-          Hooks adalah function yang memungkinkan component menggunakan berbagai
-          fitur React seperti state dan lifecycle behavior.
+          Hooks are functions that let components use React features such as
+          state and other component-related behavior.
         </p>
 
         <pre>
@@ -210,10 +208,10 @@ export default function Counter() {
       <section>
         <h2>Common Issues</h2>
 
-        <h3>Component name tidak menggunakan PascalCase</h3>
+        <h3>Component Name Does Not Use PascalCase</h3>
         <p>
-          Component React biasanya menggunakan PascalCase agar dapat dibedakan
-          dari element HTML.
+          React components are usually written using PascalCase so they can be
+          distinguished from regular HTML elements.
         </p>
 
         <pre>
@@ -222,26 +220,29 @@ export default function Counter() {
 }`}</code>
         </pre>
 
-        <h3>Props tidak dikirim sesuai kebutuhan</h3>
+        <h3>Props Are Not Passed Correctly</h3>
         <p>
-          Pastikan nama props yang dikirim dari parent sesuai dengan props yang
-          diterima oleh child component.
+          Make sure the names of the props passed from the parent match the
+          props expected by the child component.
         </p>
 
-        <h3>Lupa key ketika melakukan map</h3>
-        <p>Ketika merender list, berikan key yang unik pada setiap element.</p>
-
-        <h3>Salah memahami state</h3>
+        <h3>Forgetting the key When Using map</h3>
         <p>
-          State tidak langsung berubah hanya karena setter dipanggil. React akan
-          menjadwalkan update dan melakukan render kembali dengan state terbaru.
+          When rendering a list, give each element a unique <code>key</code>.
         </p>
 
-        <h3>Menggunakan state pada Server Component</h3>
+        <h3>Misunderstanding State</h3>
         <p>
-          Pada Next.js App Router, component yang menggunakan useState atau
-          event handler tertentu perlu menjadi Client Component dengan
-          menggunakan directive <code>"use client"</code>.
+          State does not change immediately just because its setter is called.
+          React schedules the update and renders the component again with the
+          latest state.
+        </p>
+
+        <h3>Using State in a Server Component</h3>
+        <p>
+          In the Next.js App Router, a component that uses <code>useState</code>{" "}
+          or certain event handlers needs to be a Client Component by using the{" "}
+          <code>"use client"</code> directive.
         </p>
       </section>
     </NoteDetail>

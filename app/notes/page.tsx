@@ -4,37 +4,37 @@ const notes = [
   {
     key: "html",
     title: "HTML",
-    description: "Catatan dasar tentang HTML yang saya pelajari.",
+    description: "Notes on the basics of HTML and how I use it.",
     href: "/notes/html",
   },
   {
     key: "css",
     title: "CSS",
-    description: "Catatan tentang styling dan layout yang saya pelajari.",
+    description: "Notes on styling, layout, and making things look right.",
     href: "/notes/css",
   },
   {
     key: "javascript",
     title: "JavaScript",
-    description: "Catatan mengenai JavaScript yang saya pelajari.",
+    description: "Notes on JavaScript, logic, and making pages interactive.",
     href: "/notes/javascript",
   },
   {
     key: "react",
     title: "React",
-    description: "Catatan mengenai React yang saya pelajari.",
+    description: "Notes on React and building interfaces with components.",
     href: "/notes/react",
   },
   {
     key: "nextjs",
     title: "Next.js",
-    description: "Catatan mengenai Next.js yang saya pelajari.",
+    description: "Notes on Next.js and building web projects with React.",
     href: "/notes/nextjs",
   },
   {
     key: "git-github",
     title: "Git & GitHub",
-    description: "Catatan mengenai Git dan GitHub yang saya pelajari.",
+    description: "Notes on version control and managing projects with Git.",
     href: "/notes/git-github",
   },
 ];
@@ -44,9 +44,7 @@ export default function Notes() {
     <main className="page-container">
       <header className="page-header">
         <h1>Notes</h1>
-        <p>
-          Catatan dan materi yang saya pelajari selama belajar web development.
-        </p>
+        <p>Things I’ve learned, figured out, and written down along the way.</p>
       </header>
 
       <section className="notes-content">

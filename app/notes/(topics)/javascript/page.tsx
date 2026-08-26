@@ -4,25 +4,25 @@ export default function JavaScriptNote() {
   return (
     <NoteDetail
       title="JavaScript"
-      description="Catatan mengenai JavaScript yang saya pelajari."
+      description="Notes on the JavaScript concepts I’ve been learning."
     >
       <section>
         <h2>Overview</h2>
 
         <p>
-          JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan
-          logic, interaksi, dan perilaku dinamis pada website.
+          JavaScript is a programming language used to add logic, interaction,
+          and dynamic behavior to websites.
         </p>
 
         <p>
-          JavaScript dapat dijalankan di browser dan juga dapat digunakan di
-          luar browser dengan runtime seperti Node.js.
+          JavaScript can run in the browser, but it can also be used outside the
+          browser with runtimes such as Node.js.
         </p>
 
         <p>
-          Dalam web development, JavaScript dapat digunakan untuk mengolah data,
-          menangani event, memanipulasi halaman, berkomunikasi dengan API, dan
-          membangun aplikasi menggunakan library atau framework seperti React.
+          In web development, JavaScript can be used to work with data, handle
+          events, manipulate pages, communicate with APIs, and build
+          applications using libraries or frameworks such as React.
         </p>
       </section>
 
@@ -31,9 +31,9 @@ export default function JavaScriptNote() {
 
         <h3>Variables</h3>
         <p>
-          Variable digunakan untuk menyimpan nilai yang dapat digunakan kembali
-          dalam program. JavaScript menyediakan <code>let</code> dan{" "}
-          <code>const</code> untuk mendeklarasikan variable.
+          Variables are used to store values that we can use throughout a
+          program. JavaScript provides <code>let</code> and <code>const</code>{" "}
+          for declaring variables.
         </p>
 
         <pre>
@@ -43,8 +43,8 @@ let age = 20;`}</code>
 
         <h3>Data Types</h3>
         <p>
-          JavaScript memiliki berbagai tipe data seperti string, number,
-          boolean, object, array, null, dan undefined.
+          JavaScript has several data types, including string, number, boolean,
+          object, array, null, and undefined.
         </p>
 
         <pre>
@@ -54,10 +54,7 @@ const isLearning = true;`}</code>
         </pre>
 
         <h3>Functions</h3>
-        <p>
-          Function digunakan untuk mengelompokkan logic agar dapat digunakan
-          kembali.
-        </p>
+        <p>Functions let us group logic into reusable pieces of code.</p>
 
         <pre>
           <code>{`function greet(name) {
@@ -66,10 +63,7 @@ const isLearning = true;`}</code>
         </pre>
 
         <h3>Objects</h3>
-        <p>
-          Object digunakan untuk menyimpan data dalam bentuk pasangan key dan
-          value.
-        </p>
+        <p>Objects are used to store related data as key-value pairs.</p>
 
         <pre>
           <code>{`const user = {
@@ -79,9 +73,7 @@ const isLearning = true;`}</code>
         </pre>
 
         <h3>Arrays</h3>
-        <p>
-          Array digunakan untuk menyimpan sekumpulan nilai dalam satu variable.
-        </p>
+        <p>Arrays are used to store multiple values in a single variable.</p>
 
         <pre>
           <code>{`const skills = ["HTML", "CSS", "JavaScript"];`}</code>
@@ -89,8 +81,8 @@ const isLearning = true;`}</code>
 
         <h3>Conditions</h3>
         <p>
-          Conditional digunakan untuk menjalankan logic berdasarkan kondisi
-          tertentu.
+          Conditional statements let us run different logic depending on a
+          certain condition.
         </p>
 
         <pre>
@@ -100,7 +92,9 @@ const isLearning = true;`}</code>
         </pre>
 
         <h3>Loops</h3>
-        <p>Loop digunakan untuk menjalankan suatu proses secara berulang.</p>
+        <p>
+          Loops are used when we need to run the same process multiple times.
+        </p>
 
         <pre>
           <code>{`for (let i = 0; i < 3; i++) {
@@ -110,8 +104,8 @@ const isLearning = true;`}</code>
 
         <h3>Destructuring</h3>
         <p>
-          Destructuring digunakan untuk mengambil nilai dari array atau object
-          dengan cara yang lebih praktis.
+          Destructuring gives us a convenient way to extract values from objects
+          or arrays.
         </p>
 
         <pre>
@@ -125,8 +119,8 @@ const { name, role } = user;`}</code>
 
         <h3>Template Literals</h3>
         <p>
-          Template literal digunakan untuk membuat string yang dapat
-          menggabungkan variable atau expression dengan lebih mudah.
+          Template literals make it easier to create strings that include
+          variables or expressions.
         </p>
 
         <pre>
@@ -136,8 +130,8 @@ const message = \`Hello, \${name}\`;`}</code>
 
         <h3>Optional Chaining</h3>
         <p>
-          Optional chaining digunakan untuk mengakses property tanpa menyebabkan
-          error ketika object atau property sebelumnya tidak tersedia.
+          Optional chaining lets us access a property without throwing an error
+          when the object or a property earlier in the chain is unavailable.
         </p>
 
         <pre>
@@ -201,41 +195,41 @@ if (isLoggedIn) {
       <section>
         <h2>Common Issues</h2>
 
-        <h3>Variable belum didefinisikan</h3>
+        <h3>Using an Undefined Variable</h3>
         <p>
-          Pastikan variable sudah dibuat sebelum digunakan dan perhatikan
-          penulisan nama variable.
+          Make sure a variable has been declared before using it, and double
+          check the spelling of its name.
         </p>
 
         <pre>
           <code>{`console.log(username);
 
-// username belum didefinisikan`}</code>
+// username has not been defined`}</code>
         </pre>
 
-        <h3>Salah membedakan let dan const</h3>
+        <h3>Confusing let and const</h3>
         <p>
-          Gunakan <code>const</code> ketika variable tidak perlu di-assign ulang
-          dan <code>let</code> ketika nilainya memang perlu diubah.
+          Use <code>const</code> when a variable does not need to be reassigned,
+          and <code>let</code> when its value needs to change.
         </p>
 
-        <h3>Salah memahami tipe data</h3>
+        <h3>Misunderstanding Data Types</h3>
         <p>
-          Perhatikan tipe data ketika melakukan operasi atau perbandingan agar
-          hasilnya sesuai dengan yang diharapkan.
+          Pay attention to data types when performing operations or comparisons
+          so you get the result you expect.
         </p>
 
-        <h3>Kesalahan pada function</h3>
+        <h3>Function Errors</h3>
         <p>
-          Pastikan parameter, argument, dan nilai return digunakan sesuai
-          kebutuhan function.
+          Make sure parameters, arguments, and return values are being used
+          correctly for the function you are building.
         </p>
 
-        <h3>Kesalahan pada asynchronous code</h3>
+        <h3>Problems with Asynchronous Code</h3>
         <p>
-          Ketika bekerja dengan data dari API atau proses asynchronous lainnya,
-          pahami penggunaan Promise, async, dan await agar proses berjalan
-          dengan benar.
+          When working with API data or other asynchronous processes, make sure
+          you understand Promises, async, and await so the process behaves as
+          expected.
         </p>
       </section>
     </NoteDetail>

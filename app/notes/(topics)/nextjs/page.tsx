@@ -4,25 +4,25 @@ export default function NextJSNote() {
   return (
     <NoteDetail
       title="Next.js"
-      description="Catatan mengenai Next.js yang saya pelajari."
+      description="Notes about Next.js and what I’ve learned so far."
     >
       <section>
         <h2>Overview</h2>
 
         <p>
-          Next.js adalah framework React yang digunakan untuk membangun aplikasi
-          web dengan berbagai fitur dan struktur yang sudah disediakan.
+          Next.js is a React framework that gives us a lot of the tools and
+          structure we need to build modern web applications.
         </p>
 
         <p>
-          Next.js menyediakan fitur seperti routing berbasis file, Server
-          Components, Client Components, rendering, dan optimasi yang membantu
-          proses development aplikasi web.
+          It comes with features like file-based routing, Server Components,
+          Client Components, different rendering strategies, and built-in
+          optimizations that make development easier.
         </p>
 
         <p>
-          Next.js dapat digunakan untuk membuat website sederhana maupun
-          aplikasi web yang lebih kompleks.
+          You can use Next.js for something as simple as a personal website or
+          go all the way to building a much larger web application.
         </p>
       </section>
 
@@ -31,8 +31,8 @@ export default function NextJSNote() {
 
         <h3>App Router</h3>
         <p>
-          App Router menggunakan folder di dalam directory app untuk menentukan
-          struktur aplikasi dan routing.
+          The App Router uses folders inside the <code>app</code> directory to
+          define the structure and routes of the application.
         </p>
 
         <pre>
@@ -46,8 +46,9 @@ export default function NextJSNote() {
 
         <h3>File-based Routing</h3>
         <p>
-          Folder dan file tertentu secara otomatis digunakan Next.js untuk
-          menentukan URL sebuah halaman.
+          Next.js uses specific files and folders to automatically determine the
+          URL of a page. This means we can create routes simply by organizing
+          our project structure.
         </p>
 
         <pre>
@@ -59,22 +60,22 @@ export default function NextJSNote() {
 
         <h3>Dynamic Routes</h3>
         <p>
-          Dynamic route menggunakan folder dengan nama yang berada di dalam
-          square brackets untuk membuat route berdasarkan parameter.
+          Dynamic routes use square brackets in the folder name to create routes
+          based on a parameter.
         </p>
 
         <pre>
           <code>{`app/notes/[slug]/page.tsx
 
-// Contoh:
+// Examples:
 // /notes/html
 // /notes/css`}</code>
         </pre>
 
         <h3>Route Groups</h3>
         <p>
-          Route group menggunakan tanda kurung untuk mengelompokkan folder tanpa
-          memasukkan nama folder tersebut ke dalam URL.
+          Route groups use parentheses to organize related routes without
+          including the folder name in the URL.
         </p>
 
         <pre>
@@ -86,15 +87,15 @@ export default function NextJSNote() {
 
         <h3>Server Components</h3>
         <p>
-          Component pada App Router secara default merupakan Server Component.
-          Server Component dapat digunakan untuk membuat UI tanpa harus mengirim
-          JavaScript component tersebut ke browser.
+          Components inside the App Router are Server Components by default.
+          They allow us to build UI that can be rendered on the server without
+          sending that component’s JavaScript to the browser.
         </p>
 
         <h3>Client Components</h3>
         <p>
-          Client Component digunakan ketika component membutuhkan interaksi
-          browser seperti state, event handler, atau browser API.
+          Client Components are useful when a component needs browser-side
+          interaction, such as state, event handlers, or browser APIs.
         </p>
 
         <pre>
@@ -105,8 +106,8 @@ import { useState } from "react";`}</code>
 
         <h3>Layouts</h3>
         <p>
-          Layout digunakan untuk membuat UI yang dapat digunakan bersama oleh
-          beberapa halaman dalam sebuah route segment.
+          Layouts let us create UI that can be shared across multiple pages
+          inside a route segment.
         </p>
 
         <pre>
@@ -115,8 +116,8 @@ import { useState } from "react";`}</code>
 
         <h3>Link</h3>
         <p>
-          Component Link digunakan untuk melakukan navigasi antar halaman
-          menggunakan routing Next.js.
+          The <code>Link</code> component is used to navigate between pages
+          using Next.js routing.
         </p>
 
         <pre>
@@ -201,35 +202,37 @@ export default function Home() {
       <section>
         <h2>Common Issues</h2>
 
-        <h3>Route menghasilkan 404</h3>
+        <h3>A Route Returns 404</h3>
         <p>
-          Periksa kembali struktur folder dan pastikan file page.tsx berada pada
-          lokasi yang sesuai dengan URL yang ingin dibuat.
+          Check your folder structure and make sure the <code>page.tsx</code>{" "}
+          file is in the right location for the URL you want to create.
         </p>
 
-        <h3>Salah memahami Route Group</h3>
+        <h3>Misunderstanding Route Groups</h3>
         <p>
-          Folder dengan nama seperti <code>(topics)</code> tidak menjadi bagian
-          dari URL. Folder tersebut hanya digunakan untuk mengelompokkan route.
+          A folder such as <code>(topics)</code> does not become part of the
+          URL. It is only there to help organize related routes.
         </p>
 
-        <h3>State tidak dapat digunakan</h3>
+        <h3>State Doesn’t Work</h3>
         <p>
-          Component yang menggunakan useState atau event handler tertentu perlu
-          menggunakan directive <code>"use client"</code>.
+          A component that uses <code>useState</code> or certain event handlers
+          needs to be a Client Component by adding the <code>"use client"</code>{" "}
+          directive.
         </p>
 
-        <h3>Import component tidak ditemukan</h3>
+        <h3>Component Import Cannot Be Found</h3>
         <p>
-          Periksa path import, nama file, dan struktur folder component.
-          Perhatikan juga perbedaan huruf besar dan kecil pada nama file.
+          Check the import path, file name, and component folder structure. Pay
+          attention to uppercase and lowercase letters in file names as well.
         </p>
 
-        <h3>Perubahan routing tidak langsung terlihat</h3>
+        <h3>Routing Changes Don’t Appear</h3>
         <p>
-          Jika terjadi masalah setelah perubahan struktur route, development
-          server dapat dihentikan dan folder .next dapat dihapus agar Next.js
-          membuat ulang file hasil generate.
+          If something looks wrong after changing the route structure, try
+          restarting the development server. In some cases, removing the{" "}
+          <code>.next</code> folder can also help Next.js regenerate its
+          generated files.
         </p>
       </section>
     </NoteDetail>

@@ -2,24 +2,23 @@ import NoteDetail from "@/components/NoteDetail/NoteDetail";
 
 export default function CssNote() {
   return (
-    <NoteDetail title="CSS" description="Catatan tentang styling dan layout.">
+    <NoteDetail title="CSS" description="Notes on styling and layout.">
       <section>
         <h2>Overview</h2>
 
         <p>
-          CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan
-          layout pada halaman web.
+          CSS (Cascading Style Sheets) is used to control how a web page looks
+          and how its layout is arranged.
         </p>
 
         <p>
-          Dengan CSS, kita dapat mengatur warna, ukuran, jarak, posisi,
-          typography, layout, dan berbagai aspek visual lainnya.
+          With CSS, we can control colors, sizes, spacing, positioning,
+          typography, layout, and many other visual aspects of a website.
         </p>
 
         <p>
-          CSS biasanya digunakan bersama HTML. HTML menentukan struktur dan
-          konten, sedangkan CSS menentukan bagaimana struktur tersebut
-          ditampilkan.
+          CSS is usually used together with HTML. HTML defines the structure and
+          content, while CSS controls how that structure is presented.
         </p>
       </section>
 
@@ -27,10 +26,7 @@ export default function CssNote() {
         <h2>Core Concepts</h2>
 
         <h3>Selectors</h3>
-        <p>
-          Selector digunakan untuk menentukan element HTML yang ingin diberi
-          styling.
-        </p>
+        <p>A selector is used to target the HTML elements we want to style.</p>
 
         <pre>
           <code>{`.title {
@@ -42,10 +38,10 @@ p {
 }`}</code>
         </pre>
 
-        <h3>Properties dan Values</h3>
+        <h3>Properties and Values</h3>
         <p>
-          CSS menggunakan property dan value untuk menentukan bagaimana sebuah
-          element ditampilkan.
+          CSS uses properties and values to define how an element should look
+          and behave.
         </p>
 
         <pre>
@@ -55,10 +51,10 @@ p {
 }`}</code>
         </pre>
 
-        <h3>Class</h3>
+        <h3>Classes</h3>
         <p>
-          Class digunakan untuk memberikan styling pada satu atau beberapa
-          element yang memiliki class yang sama.
+          A class lets us apply the same styling to one or multiple elements
+          that share the same class.
         </p>
 
         <pre>
@@ -69,8 +65,8 @@ p {
 
         <h3>Box Model</h3>
         <p>
-          Setiap element pada halaman dapat dipahami melalui box model yang
-          terdiri dari content, padding, border, dan margin.
+          Every element on a page can be understood through the box model, which
+          consists of content, padding, border, and margin.
         </p>
 
         <pre>
@@ -83,8 +79,8 @@ p {
 
         <h3>Display</h3>
         <p>
-          Property display menentukan bagaimana sebuah element ditampilkan dan
-          berinteraksi dengan element lainnya.
+          The display property determines how an element is displayed and how it
+          interacts with other elements.
         </p>
 
         <pre>
@@ -95,8 +91,8 @@ p {
 
         <h3>Flexbox</h3>
         <p>
-          Flexbox digunakan untuk mengatur layout dalam satu dimensi, baik
-          secara horizontal maupun vertikal.
+          Flexbox is useful for arranging elements in one dimension, either
+          horizontally or vertically.
         </p>
 
         <pre>
@@ -109,8 +105,8 @@ p {
 
         <h3>Grid</h3>
         <p>
-          CSS Grid digunakan untuk membuat layout dua dimensi menggunakan baris
-          dan kolom.
+          CSS Grid is used to create two-dimensional layouts using rows and
+          columns.
         </p>
 
         <pre>
@@ -123,8 +119,8 @@ p {
 
         <h3>Position</h3>
         <p>
-          Position digunakan untuk mengatur bagaimana sebuah element ditempatkan
-          dalam layout.
+          The position property controls how an element is placed within the
+          layout.
         </p>
 
         <pre>
@@ -137,8 +133,8 @@ p {
 
         <h3>Responsive Design</h3>
         <p>
-          Responsive design memungkinkan tampilan website menyesuaikan berbagai
-          ukuran layar seperti desktop, tablet, dan mobile.
+          Responsive design allows a website to adapt to different screen sizes,
+          such as desktop, tablet, and mobile.
         </p>
 
         <pre>
@@ -206,34 +202,34 @@ p {
       <section>
         <h2>Common Issues</h2>
 
-        <h3>CSS tidak diterapkan</h3>
+        <h3>CSS Is Not Being Applied</h3>
         <p>
-          Periksa kembali selector, nama class, import stylesheet, dan pastikan
-          property CSS ditulis dengan benar.
+          Check your selector, class name, stylesheet import, and make sure your
+          CSS properties are written correctly.
         </p>
 
-        <h3>Margin dan padding tertukar</h3>
+        <h3>Mixing Up Margin and Padding</h3>
         <p>
-          Padding mengatur jarak antara content dan border, sedangkan margin
-          mengatur jarak antara sebuah element dengan element lainnya.
+          Padding controls the space between the content and the border, while
+          margin controls the space between an element and other elements.
         </p>
 
-        <h3>Layout tidak sesuai</h3>
+        <h3>Layout Doesn't Look Right</h3>
         <p>
-          Periksa display, width, height, margin, padding, serta property
-          Flexbox atau Grid yang digunakan.
+          Check your display, width, height, margin, padding, and any Flexbox or
+          Grid properties you are using.
         </p>
 
-        <h3>Element sulit diposisikan</h3>
+        <h3>An Element Is Difficult to Position</h3>
         <p>
-          Periksa penggunaan position dan pahami hubungan antara element yang
-          diposisikan dengan parent element-nya.
+          Check how you are using position and understand the relationship
+          between the positioned element and its parent element.
         </p>
 
-        <h3>Tampilan mobile berantakan</h3>
+        <h3>The Mobile Layout Looks Broken</h3>
         <p>
-          Periksa responsive layout dan gunakan media query jika diperlukan agar
-          tampilan dapat menyesuaikan ukuran layar.
+          Check your responsive layout and use a media query when necessary so
+          the website can adapt to different screen sizes.
         </p>
       </section>
     </NoteDetail>

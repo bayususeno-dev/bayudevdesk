@@ -473,7 +473,7 @@ footer {
 .tool-card {
   display: block;
   padding: 24px;
-  border: 1px solid #ddd;
+  border: 1px solid #e4deda;
   border-radius: 16px;
   text-decoration: none;
   color: inherit;
@@ -576,35 +576,41 @@ footer {
 /* Notes */
 .note-card {
   display: block;
-  padding: 25px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: white;
+  padding: 24px;
+  border: 1px solid #e4deda;
+  border-radius: 16px;
+  background: #ffffff;
   text-decoration: none;
   color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .note-card h2 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
+
+  color: #252323;
+
+  font-size: 20px;
+  line-height: 1.3;
 }
 
 .note-card p {
   margin: 0;
-  color: #666;
+  color: #706b69;
+
+  font-size: 15px;
   line-height: 1.6;
 }
 
 .note-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(37, 35, 35, 0.05);
 }
 
 .notes-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
 
 .notes-content a {
@@ -612,46 +618,69 @@ footer {
   color: inherit;
 }
 
+/* NOTE DETAIL */
+
 .note-detail-content {
-  line-height: 1.7;
+  color: #3d3938;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .note-detail-content h2 {
-  margin-top: 32px;
+  margin-top: 36px;
   margin-bottom: 12px;
+  color: #252323;
+
+  font-size: 24px;
+  line-height: 1.3;
 }
 
 .note-detail-content h3 {
-  margin-top: 24px;
-  margin-bottom: 8px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: #252323;
 }
 
 .note-detail-content p {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .note-detail-content ul,
 .note-detail-content ol {
   padding-left: 24px;
-  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 
 .note-detail-content pre {
-  padding: 16px;
-  margin: 16px 0;
-  background: #000000;
-  border-radius: 8px;
+  padding: 18px;
+  margin: 20px 0;
+
+  background: #252323;
+  border-radius: 10px;
+
   overflow-x: auto;
-  color: #00ffea;
+
+  color: #00e1ff;
+
   font-size: 14px;
   line-height: 1.6;
 }
 
 .note-detail-content code {
   font-family: Consolas, monospace;
-  padding: 2px 6px;
-  border-radius: 4px;
+}
+
+.note-detail-content p code,
+.note-detail-content li code {
+  padding: 3px 6px;
+
+  border: 1px solid #e4deda;
+  border-radius: 5px;
+
+  background: #f5f1ef;
+  color: #8b5e58;
+
   font-size: 0.9em;
 }
 
@@ -727,6 +756,7 @@ footer {
 
   .guide-section {
     padding: 22px;
-    /* PAGES */
   }
+
+  /* PAGES */
 }

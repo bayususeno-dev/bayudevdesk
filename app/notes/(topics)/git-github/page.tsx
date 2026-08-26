@@ -4,26 +4,25 @@ export default function GitGithubNote() {
   return (
     <NoteDetail
       title="Git & GitHub"
-      description="Catatan mengenai Git dan GitHub yang saya pelajari."
+      description="Notes on Git and GitHub that I’ve been learning."
     >
       <section>
         <h2>Overview</h2>
 
         <p>
-          Git adalah version control system yang digunakan untuk mencatat,
-          mengelola, dan melacak perubahan pada project.
+          Git is a version control system that helps us track, manage, and
+          organize changes in a project.
         </p>
 
         <p>
-          GitHub adalah platform online yang dapat digunakan untuk menyimpan
-          repository Git, berkolaborasi, dan mengelola project secara online.
+          GitHub is an online platform where we can store Git repositories,
+          collaborate with others, and manage projects online.
         </p>
 
         <p>
-          Git dan GitHub sering digunakan bersama, tetapi keduanya bukan hal
-          yang sama. Git bekerja pada project secara lokal, sedangkan GitHub
-          menyediakan tempat untuk menyimpan dan mengelola repository secara
-          online.
+          Git and GitHub are often used together, but they are not the same
+          thing. Git works locally on your project, while GitHub provides a
+          place to store and manage your repository online.
         </p>
       </section>
 
@@ -32,20 +31,20 @@ export default function GitGithubNote() {
 
         <h3>Repository</h3>
         <p>
-          Repository adalah tempat Git menyimpan project beserta riwayat
-          perubahan yang terjadi pada project tersebut.
+          A repository is where Git stores your project along with its history
+          of changes.
         </p>
 
         <h3>Working Directory</h3>
         <p>
-          Working directory adalah kondisi file project yang sedang kita
-          kerjakan secara lokal.
+          The working directory is the current state of your project files that
+          you are working on locally.
         </p>
 
         <h3>Staging Area</h3>
         <p>
-          Staging area digunakan untuk menentukan perubahan mana yang akan
-          dimasukkan ke dalam commit.
+          The staging area lets you choose which changes you want to include in
+          your next commit.
         </p>
 
         <pre>
@@ -54,8 +53,8 @@ export default function GitGithubNote() {
 
         <h3>Commit</h3>
         <p>
-          Commit digunakan untuk menyimpan snapshot perubahan ke dalam
-          repository Git beserta pesan yang menjelaskan perubahan tersebut.
+          A commit saves a snapshot of your staged changes to the Git
+          repository, along with a message describing what changed.
         </p>
 
         <pre>
@@ -64,8 +63,8 @@ export default function GitGithubNote() {
 
         <h3>Branch</h3>
         <p>
-          Branch digunakan untuk membuat jalur development yang terpisah dari
-          branch lainnya.
+          A branch gives you a separate development path where you can work on
+          changes without directly affecting another branch.
         </p>
 
         <pre>
@@ -74,8 +73,8 @@ export default function GitGithubNote() {
 
         <h3>Remote</h3>
         <p>
-          Remote adalah repository yang berada di lokasi lain dan terhubung
-          dengan repository lokal.
+          A remote is a repository stored somewhere else and connected to your
+          local repository.
         </p>
 
         <pre>
@@ -84,8 +83,8 @@ export default function GitGithubNote() {
 
         <h3>Push</h3>
         <p>
-          Push digunakan untuk mengirim commit dari repository lokal ke remote
-          repository seperti GitHub.
+          Push sends commits from your local repository to a remote repository,
+          such as GitHub.
         </p>
 
         <pre>
@@ -94,8 +93,8 @@ export default function GitGithubNote() {
 
         <h3>Pull</h3>
         <p>
-          Pull digunakan untuk mengambil perubahan dari remote repository dan
-          menggabungkannya ke branch lokal.
+          Pull gets changes from a remote repository and integrates them into
+          your current local branch.
         </p>
 
         <pre>
@@ -104,8 +103,8 @@ export default function GitGithubNote() {
 
         <h3>Fetch</h3>
         <p>
-          Fetch digunakan untuk mengambil informasi dan commit terbaru dari
-          remote tanpa langsung menggabungkannya ke branch lokal.
+          Fetch gets the latest information and commits from a remote repository
+          without immediately integrating those changes into your local branch.
         </p>
 
         <pre>
@@ -116,43 +115,43 @@ export default function GitGithubNote() {
       <section>
         <h2>Examples</h2>
 
-        <h3>Memeriksa Status</h3>
+        <h3>Checking the Status</h3>
 
         <pre>
           <code>{`git status`}</code>
         </pre>
 
-        <h3>Menambahkan Perubahan</h3>
+        <h3>Staging Changes</h3>
 
         <pre>
           <code>{`git add .`}</code>
         </pre>
 
-        <h3>Membuat Commit</h3>
+        <h3>Creating a Commit</h3>
 
         <pre>
           <code>{`git commit -m "Update notes"`}</code>
         </pre>
 
-        <h3>Mengirim ke GitHub</h3>
+        <h3>Pushing to GitHub</h3>
 
         <pre>
           <code>{`git push`}</code>
         </pre>
 
-        <h3>Melihat Riwayat Commit</h3>
+        <h3>Viewing Commit History</h3>
 
         <pre>
           <code>{`git log --oneline`}</code>
         </pre>
 
-        <h3>Melihat Graph Commit</h3>
+        <h3>Viewing the Commit Graph</h3>
 
         <pre>
           <code>{`git log --all --decorate --oneline --graph`}</code>
         </pre>
 
-        <h3>Membuat Branch</h3>
+        <h3>Creating a Branch</h3>
 
         <pre>
           <code>{`git switch -c feature/navbar`}</code>
@@ -162,36 +161,36 @@ export default function GitGithubNote() {
       <section>
         <h2>Common Issues</h2>
 
-        <h3>Changes belum masuk commit</h3>
+        <h3>Changes Are Not Included in the Commit</h3>
         <p>
-          Periksa status repository menggunakan <code>git status</code> dan
-          pastikan perubahan sudah dimasukkan ke staging area sebelum membuat
-          commit.
+          Check the repository status with <code>git status</code> and make sure
+          the changes you want to commit have been added to the staging area.
         </p>
 
-        <h3>Commit dilakukan sebelum git add</h3>
+        <h3>Committing Before git add</h3>
         <p>
-          Git commit hanya akan menyimpan perubahan yang sudah berada di staging
-          area. Gunakan <code>git add</code> terlebih dahulu.
+          Git only includes changes that are in the staging area when creating a
+          commit. Run <code>git add</code> first to stage the changes you want
+          to include.
         </p>
 
-        <h3>Push ditolak</h3>
+        <h3>Push Is Rejected</h3>
         <p>
-          Periksa remote repository, branch yang sedang digunakan, dan pastikan
-          repository lokal memiliki akses yang sesuai ke remote.
+          Check the remote repository, the branch you are currently using, and
+          make sure your local repository has the correct access to the remote.
         </p>
 
-        <h3>Branch berbeda</h3>
+        <h3>Working on the Wrong Branch</h3>
         <p>
-          Pastikan branch lokal dan branch remote yang digunakan sesuai sebelum
-          melakukan push atau pull.
+          Make sure your local branch and the remote branch you are working with
+          are the ones you intended to use before pushing or pulling changes.
         </p>
 
-        <h3>Merge conflict</h3>
+        <h3>Merge Conflict</h3>
         <p>
-          Merge conflict terjadi ketika Git tidak dapat menentukan perubahan
-          mana yang harus digunakan. Periksa file yang mengalami conflict,
-          selesaikan perubahan secara manual, lalu lanjutkan proses merge.
+          A merge conflict happens when Git cannot automatically decide which
+          changes to keep. Check the files with conflicts, resolve them
+          manually, and then continue the merge process.
         </p>
       </section>
     </NoteDetail>
